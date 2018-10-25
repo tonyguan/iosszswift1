@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BLEPeripheral" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-Rw-8w9">
+                                <rect key="frame" x="304" y="409" width="51" height="31"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="4kV-hy-R36"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="这是一个来自于BLE外设测试。" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-MP-pBc">
+                                <rect key="frame" x="167" y="107" width="323" height="122"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gvJ-9H-pBW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gvJ-9H-pBW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gvJ-9H-pBW"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="开启BLE广播" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-Dx-1cX">
+                                <rect key="frame" x="278" y="364" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lOv-Dx-1cX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="242" id="4Oc-d8-SSR"/>
+                            <constraint firstItem="u3a-MP-pBc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="35" id="4bf-b4-8bS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u3a-MP-pBc" secondAttribute="trailing" constant="24" id="8El-EA-NWM"/>
+                            <constraint firstItem="NcB-Rw-8w9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="287" id="LLQ-qC-nwo"/>
+                            <constraint firstItem="u3a-MP-pBc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="N2l-gr-TH5"/>
+                            <constraint firstAttribute="centerX" secondItem="NcB-Rw-8w9" secondAttribute="centerX" id="OZs-M2-QPi"/>
+                            <constraint firstAttribute="centerX" secondItem="lOv-Dx-1cX" secondAttribute="centerX" id="ZOD-jz-g2q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4bf-b4-8bS"/>
+                                <exclude reference="8El-EA-NWM"/>
+                                <exclude reference="N2l-gr-TH5"/>
+                                <exclude reference="4Oc-d8-SSR"/>
+                                <exclude reference="ZOD-jz-g2q"/>
+                                <exclude reference="LLQ-qC-nwo"/>
+                                <exclude reference="OZs-M2-QPi"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4bf-b4-8bS"/>
+                                <include reference="8El-EA-NWM"/>
+                                <include reference="N2l-gr-TH5"/>
+                                <include reference="4Oc-d8-SSR"/>
+                                <include reference="ZOD-jz-g2q"/>
+                                <include reference="LLQ-qC-nwo"/>
+                                <include reference="OZs-M2-QPi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="u3a-MP-pBc" id="g2c-At-ERF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="429"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B2B32E1A8A377700B30164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B32D1A8A377700B30164 /* AppDelegate.swift */; };
+		43B2B3301A8A377700B30164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B32F1A8A377700B30164 /* ViewController.swift */; };
+		43B2B3331A8A377700B30164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B2B3311A8A377700B30164 /* Main.storyboard */; };
+		43B2B3351A8A377700B30164 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B2B3341A8A377700B30164 /* Images.xcassets */; };
+		43B2B3381A8A377700B30164 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B2B3361A8A377700B30164 /* LaunchScreen.xib */; };
+		43B2B3541A8A37F000B30164 /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B34F1A8A37F000B30164 /* Sensors.m */; };
+		43B2B3551A8A37F000B30164 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B3511A8A37F000B30164 /* BLEDevice.m */; };
+		43B2B3561A8A37F000B30164 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B3531A8A37F000B30164 /* BLEUtility.m */; };
+		43B2B3591A8A3D8500B30164 /* MySensorTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B2B3581A8A3D8500B30164 /* MySensorTag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43B2B3281A8A377700B30164 /* Temperature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temperature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B2B32C1A8A377700B30164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B2B32D1A8A377700B30164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43B2B32F1A8A377700B30164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43B2B3321A8A377700B30164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43B2B3341A8A377700B30164 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43B2B3371A8A377700B30164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		43B2B34D1A8A37EF00B30164 /* Ambient Temperature-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ambient Temperature-Bridging-Header.h"; sourceTree = "<group>"; };
+		43B2B34E1A8A37F000B30164 /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensors.h; sourceTree = "<group>"; };
+		43B2B34F1A8A37F000B30164 /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensors.m; sourceTree = "<group>"; };
+		43B2B3501A8A37F000B30164 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		43B2B3511A8A37F000B30164 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		43B2B3521A8A37F000B30164 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		43B2B3531A8A37F000B30164 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		43B2B3581A8A3D8500B30164 /* MySensorTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySensorTag.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B2B3251A8A377700B30164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B2B31F1A8A377700B30164 = {
+			isa = PBXGroup;
+			children = (
+				43B2B32A1A8A377700B30164 /* Temperature */,
+				43B2B3291A8A377700B30164 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B2B3291A8A377700B30164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B2B3281A8A377700B30164 /* Temperature.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B2B32A1A8A377700B30164 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				43B2B3571A8A37FC00B30164 /* SensorTagEx */,
+				43B2B32D1A8A377700B30164 /* AppDelegate.swift */,
+				43B2B32F1A8A377700B30164 /* ViewController.swift */,
+				43B2B3311A8A377700B30164 /* Main.storyboard */,
+				43B2B3581A8A3D8500B30164 /* MySensorTag.swift */,
+				43B2B3341A8A377700B30164 /* Images.xcassets */,
+				43B2B3361A8A377700B30164 /* LaunchScreen.xib */,
+				43B2B32B1A8A377700B30164 /* Supporting Files */,
+				43B2B34D1A8A37EF00B30164 /* Ambient Temperature-Bridging-Header.h */,
+			);
+			name = Temperature;
+			path = "Ambient Temperature";
+			sourceTree = "<group>";
+		};
+		43B2B32B1A8A377700B30164 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B2B32C1A8A377700B30164 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B2B3571A8A37FC00B30164 /* SensorTagEx */ = {
+			isa = PBXGroup;
+			children = (
+				43B2B34E1A8A37F000B30164 /* Sensors.h */,
+				43B2B34F1A8A37F000B30164 /* Sensors.m */,
+				43B2B3501A8A37F000B30164 /* BLEDevice.h */,
+				43B2B3511A8A37F000B30164 /* BLEDevice.m */,
+				43B2B3521A8A37F000B30164 /* BLEUtility.h */,
+				43B2B3531A8A37F000B30164 /* BLEUtility.m */,
+			);
+			name = SensorTagEx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B2B3271A8A377700B30164 /* Temperature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B2B3471A8A377700B30164 /* Build configuration list for PBXNativeTarget "Temperature" */;
+			buildPhases = (
+				43B2B3241A8A377700B30164 /* Sources */,
+				43B2B3251A8A377700B30164 /* Frameworks */,
+				43B2B3261A8A377700B30164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Temperature;
+			productName = "Ambient Temperature";
+			productReference = 43B2B3281A8A377700B30164 /* Temperature.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B2B3201A8A377700B30164 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = tonymacmini;
+				TargetAttributes = {
+					43B2B3271A8A377700B30164 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 43B2B3231A8A377700B30164 /* Build configuration list for PBXProject "Temperature" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B2B31F1A8A377700B30164;
+			productRefGroup = 43B2B3291A8A377700B30164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B2B3271A8A377700B30164 /* Temperature */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B2B3261A8A377700B30164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B2B3331A8A377700B30164 /* Main.storyboard in Resources */,
+				43B2B3381A8A377700B30164 /* LaunchScreen.xib in Resources */,
+				43B2B3351A8A377700B30164 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B2B3241A8A377700B30164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B2B3561A8A37F000B30164 /* BLEUtility.m in Sources */,
+				43B2B3301A8A377700B30164 /* ViewController.swift in Sources */,
+				43B2B3551A8A37F000B30164 /* BLEDevice.m in Sources */,
+				43B2B32E1A8A377700B30164 /* AppDelegate.swift in Sources */,
+				43B2B3591A8A3D8500B30164 /* MySensorTag.swift in Sources */,
+				43B2B3541A8A37F000B30164 /* Sensors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43B2B3311A8A377700B30164 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B2B3321A8A377700B30164 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43B2B3361A8A377700B30164 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B2B3371A8A377700B30164 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43B2B3451A8A377700B30164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B2B3461A8A377700B30164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B2B3481A8A377700B30164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Ambient Temperature/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Temperature;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambient Temperature/Ambient Temperature-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B2B3491A8A377700B30164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Ambient Temperature/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Temperature;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ambient Temperature/Ambient Temperature-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B2B3231A8A377700B30164 /* Build configuration list for PBXProject "Temperature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B2B3451A8A377700B30164 /* Debug */,
+				43B2B3461A8A377700B30164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B2B3471A8A377700B30164 /* Build configuration list for PBXNativeTarget "Temperature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B2B3481A8A377700B30164 /* Debug */,
+				43B2B3491A8A377700B30164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B2B3201A8A377700B30164 /* Project object */;
+}

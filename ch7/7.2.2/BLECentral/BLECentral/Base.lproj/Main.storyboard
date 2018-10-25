@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BLECentral" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TPF-Lz-Ob1">
+                                <rect key="frame" x="308" y="64" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫描中..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKy-vQ-Y23">
+                                <rect key="frame" x="353" y="63" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="UUd-bx-a2Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="TextView" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-PZ-1x7">
+                                <rect key="frame" x="97" y="119" width="443" height="218"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收外设数据：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzX-nb-fNe">
+                                <rect key="frame" x="63" y="64" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GzX-nb-fNe" firstAttribute="centerY" secondItem="TPF-Lz-Ob1" secondAttribute="centerY" id="4Zr-Wh-Grf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7UH-PZ-1x7" secondAttribute="bottom" constant="263" id="5uv-uH-Tqa"/>
+                            <constraint firstItem="GzX-nb-fNe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="IB9-cC-c71"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7UH-PZ-1x7" secondAttribute="trailing" constant="44" id="LBR-wk-lEa"/>
+                            <constraint firstItem="kKy-vQ-Y23" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="43" id="MzT-Uz-pJJ"/>
+                            <constraint firstItem="kKy-vQ-Y23" firstAttribute="bottom" secondItem="TPF-Lz-Ob1" secondAttribute="bottom" id="SS4-ma-SSk"/>
+                            <constraint firstItem="kKy-vQ-Y23" firstAttribute="leading" secondItem="TPF-Lz-Ob1" secondAttribute="trailing" constant="25" id="Tdd-eS-AeO"/>
+                            <constraint firstItem="TPF-Lz-Ob1" firstAttribute="top" secondItem="GzX-nb-fNe" secondAttribute="top" id="Umt-A0-Zjv"/>
+                            <constraint firstItem="7UH-PZ-1x7" firstAttribute="top" secondItem="GzX-nb-fNe" secondAttribute="bottom" constant="34" id="cFh-UJ-v9V"/>
+                            <constraint firstItem="7UH-PZ-1x7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="81" id="dmk-wD-y8e"/>
+                            <constraint firstItem="GzX-nb-fNe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="44" id="mnC-3P-leq"/>
+                            <constraint firstItem="TPF-Lz-Ob1" firstAttribute="centerX" secondItem="7UH-PZ-1x7" secondAttribute="centerX" id="zrP-4j-rfg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="TPF-Lz-Ob1" id="hVM-ak-bNB"/>
+                        <outlet property="scanLabel" destination="kKy-vQ-Y23" id="BCs-iq-8yz"/>
+                        <outlet property="textView" destination="7UH-PZ-1x7" id="76Q-nf-Esm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="376"/>
+        </scene>
+    </scenes>
+</document>

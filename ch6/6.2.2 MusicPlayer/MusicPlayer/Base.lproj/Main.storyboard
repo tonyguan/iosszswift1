@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiP-sH-Hc3">
+                                <rect key="frame" x="77" y="354" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="停止">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CAZ-Hi-50j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBd-hn-UCt">
+                                <rect key="frame" x="77" y="260" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ptU-Bi-rbJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-7k-kVC">
+                                <rect key="frame" x="77" y="177" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="4Vi-2k-rTI"/>
+                                    <constraint firstAttribute="width" constant="167" id="Iqr-gZ-S8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="播放">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Vi-2k-rTI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4Vi-2k-rTI"/>
+                                        <exclude reference="Iqr-gZ-S8G"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tpd-H6-wWE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kBd-hn-UCt" firstAttribute="top" secondItem="9dk-7k-kVC" secondAttribute="bottom" constant="55" id="1uj-gj-G2u"/>
+                            <constraint firstItem="9dk-7k-kVC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="94" id="9SX-xD-WrQ"/>
+                            <constraint firstItem="kBd-hn-UCt" firstAttribute="trailing" secondItem="9dk-7k-kVC" secondAttribute="trailing" id="ET3-Hn-7gr"/>
+                            <constraint firstItem="NiP-sH-Hc3" firstAttribute="top" secondItem="kBd-hn-UCt" secondAttribute="bottom" constant="62" id="VdQ-u6-ohD"/>
+                            <constraint firstItem="9dk-7k-kVC" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="XmX-hS-tpg"/>
+                            <constraint firstItem="kBd-hn-UCt" firstAttribute="leading" secondItem="NiP-sH-Hc3" secondAttribute="leading" id="Yt4-VQ-kEm"/>
+                            <constraint firstItem="NiP-sH-Hc3" firstAttribute="trailing" secondItem="kBd-hn-UCt" secondAttribute="trailing" id="xV4-YZ-Kz8"/>
+                            <constraint firstItem="9dk-7k-kVC" firstAttribute="leading" secondItem="kBd-hn-UCt" secondAttribute="leading" id="zQs-vf-dUO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NiP-sH-Hc3"/>
+                                <exclude reference="kBd-hn-UCt"/>
+                                <exclude reference="9dk-7k-kVC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9SX-xD-WrQ"/>
+                                <exclude reference="XmX-hS-tpg"/>
+                                <exclude reference="zQs-vf-dUO"/>
+                                <exclude reference="1uj-gj-G2u"/>
+                                <exclude reference="ET3-Hn-7gr"/>
+                                <exclude reference="Yt4-VQ-kEm"/>
+                                <exclude reference="VdQ-u6-ohD"/>
+                                <exclude reference="xV4-YZ-Kz8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NiP-sH-Hc3"/>
+                                <include reference="kBd-hn-UCt"/>
+                                <include reference="9dk-7k-kVC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9SX-xD-WrQ"/>
+                                <include reference="XmX-hS-tpg"/>
+                                <include reference="zQs-vf-dUO"/>
+                                <include reference="1uj-gj-G2u"/>
+                                <include reference="ET3-Hn-7gr"/>
+                                <include reference="Yt4-VQ-kEm"/>
+                                <include reference="VdQ-u6-ohD"/>
+                                <include reference="xV4-YZ-Kz8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
